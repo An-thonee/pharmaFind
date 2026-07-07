@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Settings | PharmaFind</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Poppins', 'ui-sans-serif', 'system-ui'] },
+          colors: {
+            primary: {50:'#ecfdf5',100:'#d1fae5',200:'#a7f3d0',300:'#6ee7b7',400:'#34d399',500:'#16a34a',600:'#15803d',700:'#166534',800:'#14532d',900:'#052e16'},
+            tealbrand: '#0f766e'
+          },
+          boxShadow: { soft: '0 20px 45px rgba(15, 118, 110, 0.10)' }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-50 font-sans text-slate-800">
+  <div class="min-h-screen lg:flex">
+    <aside class="hidden min-h-screen w-72 shrink-0 bg-gradient-to-b from-primary-600 to-tealbrand p-6 text-white lg:sticky lg:top-0 lg:block">
+      <a href="index.html" class="mb-10 flex items-center gap-3 text-2xl font-extrabold">
+        <span class="grid h-12 w-12 place-items-center rounded-2xl bg-white/15"><i class="fa-solid fa-location-crosshairs"></i></span>
+        PharmaFind
+      </a>
+      <nav class="space-y-2"><a href="dashboard.html" class="flex items-center gap-3 rounded-2xl px-4 py-3 text-sm font-semibold transition text-white/85 hover:bg-white/10 hover:text-white"><i class="fa-solid fa-gauge-high w-5"></i><span>Dashboard</span></a>
+<a href="pharmacies.html" class="flex items-center gap-3 rounded-2xl px-4 py-3 text-sm font-semibold transition text-white/85 hover:bg-white/10 hover:text-white"><i class="fa-solid fa-house-medical w-5"></i><span>Find Pharmacy</span></a>
+<a href="pharmacy-details.html" class="flex items-center gap-3 rounded-2xl px-4 py-3 text-sm font-semibold transition text-white/85 hover:bg-white/10 hover:text-white"><i class="fa-solid fa-circle-info w-5"></i><span>Pharmacy Details</span></a>
+<a href="pharmacists.html" class="flex items-center gap-3 rounded-2xl px-4 py-3 text-sm font-semibold transition text-white/85 hover:bg-white/10 hover:text-white"><i class="fa-solid fa-user-doctor w-5"></i><span>Pharmacists</span></a>
+<a href="student-hub.html" class="flex items-center gap-3 rounded-2xl px-4 py-3 text-sm font-semibold transition text-white/85 hover:bg-white/10 hover:text-white"><i class="fa-solid fa-graduation-cap w-5"></i><span>Student Hub</span></a>
+<a href="reminders.html" class="flex items-center gap-3 rounded-2xl px-4 py-3 text-sm font-semibold transition text-white/85 hover:bg-white/10 hover:text-white"><i class="fa-solid fa-pills w-5"></i><span>Medication Reminder</span></a>
+<a href="messages.html" class="flex items-center gap-3 rounded-2xl px-4 py-3 text-sm font-semibold transition text-white/85 hover:bg-white/10 hover:text-white"><i class="fa-solid fa-message w-5"></i><span>Messages</span></a>
+<a href="notifications.html" class="flex items-center gap-3 rounded-2xl px-4 py-3 text-sm font-semibold transition text-white/85 hover:bg-white/10 hover:text-white"><i class="fa-solid fa-bell w-5"></i><span>Notifications</span></a>
+<a href="profile.html" class="flex items-center gap-3 rounded-2xl px-4 py-3 text-sm font-semibold transition text-white/85 hover:bg-white/10 hover:text-white"><i class="fa-solid fa-user w-5"></i><span>Profile</span></a>
+<a href="settings.html" class="flex items-center gap-3 rounded-2xl px-4 py-3 text-sm font-semibold transition bg-white/20 text-white shadow-sm"><i class="fa-solid fa-gear w-5"></i><span>Settings</span></a></nav>
+      <a href="login.html" class="mt-8 flex items-center gap-3 rounded-2xl px-4 py-3 text-sm font-semibold text-white/85 hover:bg-white/10 hover:text-white"><i class="fa-solid fa-right-from-bracket w-5"></i>Logout</a>
+    </aside>
+    <div class="flex min-w-0 flex-1 flex-col">
+      <div class="sticky top-0 z-30 border-b border-slate-200 bg-white/90 px-4 py-4 backdrop-blur lg:hidden">
+        <div class="mb-3 flex items-center justify-between">
+          <a href="index.html" class="flex items-center gap-2 text-lg font-extrabold text-primary-600"><i class="fa-solid fa-location-crosshairs"></i> PharmaFind</a>
+          <a href="profile.html" class="h-10 w-10 overflow-hidden rounded-full bg-slate-100"><img src="assets/images/ryan2.jpeg" class="h-full w-full object-cover" alt="User profile"></a>
+        </div>
+        <nav class="flex gap-2 overflow-x-auto pb-1"><a href="dashboard.html" class="shrink-0 rounded-full px-3 py-2 text-xs font-semibold bg-slate-100 text-slate-600">Dashboard</a><a href="pharmacies.html" class="shrink-0 rounded-full px-3 py-2 text-xs font-semibold bg-slate-100 text-slate-600">Find Pharmacy</a><a href="pharmacy-details.html" class="shrink-0 rounded-full px-3 py-2 text-xs font-semibold bg-slate-100 text-slate-600">Pharmacy Details</a><a href="pharmacists.html" class="shrink-0 rounded-full px-3 py-2 text-xs font-semibold bg-slate-100 text-slate-600">Pharmacists</a><a href="student-hub.html" class="shrink-0 rounded-full px-3 py-2 text-xs font-semibold bg-slate-100 text-slate-600">Student Hub</a><a href="reminders.html" class="shrink-0 rounded-full px-3 py-2 text-xs font-semibold bg-slate-100 text-slate-600">Medication Reminder</a><a href="messages.html" class="shrink-0 rounded-full px-3 py-2 text-xs font-semibold bg-slate-100 text-slate-600">Messages</a><a href="notifications.html" class="shrink-0 rounded-full px-3 py-2 text-xs font-semibold bg-slate-100 text-slate-600">Notifications</a></nav>
+      </div>
+      <main class="p-4 sm:p-6 lg:p-8"><section class="grid gap-8 lg:grid-cols-4"><aside><div class="rounded-3xl border border-slate-100 bg-white p-6 shadow-soft "><h2 class="text-xl font-bold text-slate-900">Settings</h2><nav class="mt-5 grid gap-2"><a href="dashboard.html" class="rounded-2xl bg-slate-50 px-4 py-3 font-semibold text-slate-600">🏠 Dashboard</a><a href="profile.html" class="rounded-2xl bg-slate-50 px-4 py-3 font-semibold text-slate-600">👤 Profile</a><a href="messages.html" class="rounded-2xl bg-slate-50 px-4 py-3 font-semibold text-slate-600">💬 Messages</a><a href="notifications.html" class="rounded-2xl bg-slate-50 px-4 py-3 font-semibold text-slate-600">🔔 Notifications</a><a href="login.html" class="rounded-2xl bg-rose-50 px-4 py-3 font-semibold text-rose-600">🚪 Logout</a></nav></div></aside><main class="space-y-6 lg:col-span-3"><div class="rounded-3xl border border-slate-100 bg-white p-6 shadow-soft "><h2 class="text-2xl font-bold text-primary-600">Account Settings</h2><div class="mt-5 grid gap-4 md:grid-cols-2"><label class="text-sm font-semibold text-slate-700">Email Address<input type="email" value="onyeka@email.com" class="mt-2 w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none transition placeholder:text-slate-400 focus:border-primary-500 focus:ring-4 focus:ring-primary-100 "></label><label class="text-sm font-semibold text-slate-700">Phone Number<input type="text" value="+234800000000" class="mt-2 w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none transition placeholder:text-slate-400 focus:border-primary-500 focus:ring-4 focus:ring-primary-100 "></label></div><button class="mt-5 rounded-2xl bg-primary-600 px-5 py-3 font-bold text-white hover:bg-primary-700">Save Changes</button></div><div class="rounded-3xl border border-slate-100 bg-white p-6 shadow-soft "><h2 class="text-2xl font-bold text-primary-600">Change Password</h2><div class="mt-5 grid gap-4 md:grid-cols-3"><input type="password" placeholder="Current Password" class="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none transition placeholder:text-slate-400 focus:border-primary-500 focus:ring-4 focus:ring-primary-100 "><input type="password" placeholder="New Password" class="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none transition placeholder:text-slate-400 focus:border-primary-500 focus:ring-4 focus:ring-primary-100 "><input type="password" placeholder="Confirm Password" class="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none transition placeholder:text-slate-400 focus:border-primary-500 focus:ring-4 focus:ring-primary-100 "></div><button class="mt-5 rounded-2xl bg-primary-600 px-5 py-3 font-bold text-white hover:bg-primary-700">Update Password</button></div><div class="rounded-3xl border border-slate-100 bg-white p-6 shadow-soft "><h2 class="text-2xl font-bold text-primary-600">Preferences</h2><div class="mt-5 space-y-4"><label class="flex items-center justify-between rounded-2xl bg-slate-50 p-4"><span class="font-semibold">Enable Notifications</span><input type="checkbox" checked class="h-5 w-5 rounded text-primary-600"></label><label class="flex items-center justify-between rounded-2xl bg-slate-50 p-4"><span class="font-semibold">Dark Mode</span><input type="checkbox" class="h-5 w-5 rounded text-primary-600"></label><label class="block font-semibold">Language<select class="mt-2 w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none transition placeholder:text-slate-400 focus:border-primary-500 focus:ring-4 focus:ring-primary-100 "><option>English</option><option>French</option><option>Arabic</option></select></label></div></div><div class="rounded-3xl border border-slate-100 bg-white p-6 shadow-soft "><h2 class="text-2xl font-bold text-rose-600">Privacy & Security</h2><p class="mt-2 text-sm text-slate-500">Delete account will remove saved pharmacies, messages, and reminders from this static demo.</p><button class="mt-5 rounded-2xl bg-rose-600 px-5 py-3 font-bold text-white hover:bg-rose-700">Delete Account</button></div></main></section></main>
+    </div>
+  </div>
+</body>
+</html>

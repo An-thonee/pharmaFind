@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PharmaFind Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Poppins', 'ui-sans-serif', 'system-ui'] },
+          colors: {
+            primary: {50:'#ecfdf5',100:'#d1fae5',200:'#a7f3d0',300:'#6ee7b7',400:'#34d399',500:'#16a34a',600:'#15803d',700:'#166534',800:'#14532d',900:'#052e16'},
+            tealbrand: '#0f766e'
+          },
+          boxShadow: { soft: '0 20px 45px rgba(15, 118, 110, 0.10)' }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-50 font-sans text-slate-800">
+  <div class="min-h-screen lg:flex">
+    <aside class="hidden min-h-screen w-72 shrink-0 bg-gradient-to-b from-primary-600 to-tealbrand p-6 text-white lg:sticky lg:top-0 lg:block">
+      <a href="index.html" class="mb-10 flex items-center gap-3 text-2xl font-extrabold">
+        <span class="grid h-12 w-12 place-items-center rounded-2xl bg-white/15"><i class="fa-solid fa-location-crosshairs"></i></span>
+        PharmaFind
+      </a>
+      <nav class="space-y-2"><a href="dashboard.html" class="flex items-center gap-3 rounded-2xl px-4 py-3 text-sm font-semibold transition bg-white/20 text-white shadow-sm"><i class="fa-solid fa-gauge-high w-5"></i><span>Dashboard</span></a>
+<a href="pharmacies.html" class="flex items-center gap-3 rounded-2xl px-4 py-3 text-sm font-semibold transition text-white/85 hover:bg-white/10 hover:text-white"><i class="fa-solid fa-house-medical w-5"></i><span>Find Pharmacy</span></a>
+<a href="pharmacy-details.html" class="flex items-center gap-3 rounded-2xl px-4 py-3 text-sm font-semibold transition text-white/85 hover:bg-white/10 hover:text-white"><i class="fa-solid fa-circle-info w-5"></i><span>Pharmacy Details</span></a>
+<a href="pharmacists.html" class="flex items-center gap-3 rounded-2xl px-4 py-3 text-sm font-semibold transition text-white/85 hover:bg-white/10 hover:text-white"><i class="fa-solid fa-user-doctor w-5"></i><span>Pharmacists</span></a>
+<a href="student-hub.html" class="flex items-center gap-3 rounded-2xl px-4 py-3 text-sm font-semibold transition text-white/85 hover:bg-white/10 hover:text-white"><i class="fa-solid fa-graduation-cap w-5"></i><span>Student Hub</span></a>
+<a href="reminders.html" class="flex items-center gap-3 rounded-2xl px-4 py-3 text-sm font-semibold transition text-white/85 hover:bg-white/10 hover:text-white"><i class="fa-solid fa-pills w-5"></i><span>Medication Reminder</span></a>
+<a href="messages.html" class="flex items-center gap-3 rounded-2xl px-4 py-3 text-sm font-semibold transition text-white/85 hover:bg-white/10 hover:text-white"><i class="fa-solid fa-message w-5"></i><span>Messages</span></a>
+<a href="notifications.html" class="flex items-center gap-3 rounded-2xl px-4 py-3 text-sm font-semibold transition text-white/85 hover:bg-white/10 hover:text-white"><i class="fa-solid fa-bell w-5"></i><span>Notifications</span></a>
+<a href="profile.html" class="flex items-center gap-3 rounded-2xl px-4 py-3 text-sm font-semibold transition text-white/85 hover:bg-white/10 hover:text-white"><i class="fa-solid fa-user w-5"></i><span>Profile</span></a>
+<a href="settings.html" class="flex items-center gap-3 rounded-2xl px-4 py-3 text-sm font-semibold transition text-white/85 hover:bg-white/10 hover:text-white"><i class="fa-solid fa-gear w-5"></i><span>Settings</span></a></nav>
+      <a href="login.html" class="mt-8 flex items-center gap-3 rounded-2xl px-4 py-3 text-sm font-semibold text-white/85 hover:bg-white/10 hover:text-white"><i class="fa-solid fa-right-from-bracket w-5"></i>Logout</a>
+    </aside>
+    <div class="flex min-w-0 flex-1 flex-col">
+      <div class="sticky top-0 z-30 border-b border-slate-200 bg-white/90 px-4 py-4 backdrop-blur lg:hidden">
+        <div class="mb-3 flex items-center justify-between">
+          <a href="index.html" class="flex items-center gap-2 text-lg font-extrabold text-primary-600"><i class="fa-solid fa-location-crosshairs"></i> PharmaFind</a>
+          <a href="profile.html" class="h-10 w-10 overflow-hidden rounded-full bg-slate-100"><img src="assets/images/ryan2.jpeg" class="h-full w-full object-cover" alt="User profile"></a>
+        </div>
+        <nav class="flex gap-2 overflow-x-auto pb-1"><a href="dashboard.html" class="shrink-0 rounded-full px-3 py-2 text-xs font-semibold bg-primary-600 text-white">Dashboard</a><a href="pharmacies.html" class="shrink-0 rounded-full px-3 py-2 text-xs font-semibold bg-slate-100 text-slate-600">Find Pharmacy</a><a href="pharmacy-details.html" class="shrink-0 rounded-full px-3 py-2 text-xs font-semibold bg-slate-100 text-slate-600">Pharmacy Details</a><a href="pharmacists.html" class="shrink-0 rounded-full px-3 py-2 text-xs font-semibold bg-slate-100 text-slate-600">Pharmacists</a><a href="student-hub.html" class="shrink-0 rounded-full px-3 py-2 text-xs font-semibold bg-slate-100 text-slate-600">Student Hub</a><a href="reminders.html" class="shrink-0 rounded-full px-3 py-2 text-xs font-semibold bg-slate-100 text-slate-600">Medication Reminder</a><a href="messages.html" class="shrink-0 rounded-full px-3 py-2 text-xs font-semibold bg-slate-100 text-slate-600">Messages</a><a href="notifications.html" class="shrink-0 rounded-full px-3 py-2 text-xs font-semibold bg-slate-100 text-slate-600">Notifications</a></nav>
+      </div>
+      <main class="p-4 sm:p-6 lg:p-8">
+<section class="mb-8 flex flex-col justify-between gap-5 rounded-3xl bg-gradient-to-r from-primary-600 to-tealbrand p-6 text-white shadow-soft md:flex-row md:items-center">
+  <div>
+    <p class="text-sm font-semibold uppercase tracking-[0.25em] text-white/70">Patient dashboard</p>
+    <h1 class="mt-2 text-3xl font-extrabold md:text-4xl">Hello, Onyeka 👋</h1>
+    <p class="mt-2 max-w-2xl text-white/80">Welcome back to PharmaFind. Search licensed pharmacies, track your medication, and connect with pharmacists from one clean dashboard.</p>
+  </div>
+  <img src="assets/images/ryan2.jpeg" class="h-20 w-20 rounded-3xl border-4 border-white/30 object-cover" alt="Profile photo">
+</section>
+
+<section class="mb-8 grid gap-5 sm:grid-cols-2 xl:grid-cols-4"><div class="rounded-3xl border border-slate-100 bg-white p-5 shadow-soft transition hover:-translate-y-1 hover:shadow-xl">
+      <div class="mb-4 grid h-12 w-12 place-items-center rounded-2xl bg-primary-100 text-xl text-primary-600"><i class="fa-solid fa-house-medical"></i></div>
+      <h3 class="text-3xl font-extrabold text-slate-900">25</h3>
+      <p class="mt-1 text-sm text-slate-500">Nearby Pharmacies</p>
+    </div><div class="rounded-3xl border border-slate-100 bg-white p-5 shadow-soft transition hover:-translate-y-1 hover:shadow-xl">
+      <div class="mb-4 grid h-12 w-12 place-items-center rounded-2xl bg-primary-100 text-xl text-primary-600"><i class="fa-solid fa-user-doctor"></i></div>
+      <h3 class="text-3xl font-extrabold text-slate-900">12</h3>
+      <p class="mt-1 text-sm text-slate-500">Available Pharmacists</p>
+    </div><div class="rounded-3xl border border-slate-100 bg-white p-5 shadow-soft transition hover:-translate-y-1 hover:shadow-xl">
+      <div class="mb-4 grid h-12 w-12 place-items-center rounded-2xl bg-primary-100 text-xl text-primary-600"><i class="fa-solid fa-pills"></i></div>
+      <h3 class="text-3xl font-extrabold text-slate-900">5</h3>
+      <p class="mt-1 text-sm text-slate-500">Today's Medications</p>
+    </div><div class="rounded-3xl border border-slate-100 bg-white p-5 shadow-soft transition hover:-translate-y-1 hover:shadow-xl">
+      <div class="mb-4 grid h-12 w-12 place-items-center rounded-2xl bg-primary-100 text-xl text-primary-600"><i class="fa-solid fa-heart"></i></div>
+      <h3 class="text-3xl font-extrabold text-slate-900">3</h3>
+      <p class="mt-1 text-sm text-slate-500">Saved Pharmacies</p>
+    </div></section>
+
+<section class="mb-8 grid gap-6 xl:grid-cols-3">
+  <div class="xl:col-span-2">
+    <div class="rounded-3xl border border-slate-100 bg-white p-6 shadow-soft ">
+      <div class="mb-4 flex items-center justify-between gap-4">
+        <div>
+          <h2 class="text-2xl font-bold text-slate-900">Find Pharmacy</h2>
+          <p class="text-sm text-slate-500">Search by pharmacy name, city, or state.</p>
+        </div>
+        <span class="hidden rounded-full bg-primary-50 px-4 py-2 text-sm font-semibold text-primary-700 sm:inline-flex">Verified results</span>
+      </div>
+      <form class="flex flex-col gap-3 sm:flex-row">
+        <input type="text" placeholder="Search by pharmacy, city or state" class="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none transition placeholder:text-slate-400 focus:border-primary-500 focus:ring-4 focus:ring-primary-100 " />
+        <a href="pharmacies.html" class="rounded-2xl bg-primary-600 px-7 py-3 text-center text-sm font-bold text-white transition hover:bg-primary-700">Search</a>
+      </form>
+    </div>
+  </div>
+  <div class="rounded-3xl border border-slate-100 bg-white p-6 shadow-soft ">
+    <div class="flex items-center justify-between">
+      <h3 class="text-lg font-bold text-slate-900">Today’s Medications</h3>
+      <a href="reminders.html" class="text-sm font-semibold text-primary-600 hover:text-primary-700">View All</a>
+    </div>
+    <div class="mt-5 space-y-4">
+      <div class="flex items-center gap-4 rounded-2xl bg-slate-50 p-4"><span class="grid h-11 w-11 place-items-center rounded-2xl bg-primary-100 text-primary-600"><i class="fa-solid fa-capsules"></i></span><div><p class="font-semibold">Paracetamol</p><p class="text-sm text-slate-500">500mg • 08:00 AM</p></div></div>
+      <div class="flex items-center gap-4 rounded-2xl bg-slate-50 p-4"><span class="grid h-11 w-11 place-items-center rounded-2xl bg-primary-100 text-primary-600"><i class="fa-solid fa-pills"></i></span><div><p class="font-semibold">Metformin</p><p class="text-sm text-slate-500">850mg • 02:00 PM</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="grid gap-6 xl:grid-cols-3">
+  <div class="space-y-6 xl:col-span-2">
+    <div class="grid gap-5 sm:grid-cols-2 xl:grid-cols-4"><a href="pharmacies.html" class="rounded-3xl border border-slate-100 bg-white p-5 text-center shadow-soft transition hover:-translate-y-1 hover:bg-primary-50">
+    <div class="mx-auto mb-3 grid h-12 w-12 place-items-center rounded-2xl bg-primary-100 text-primary-600"><i class="fa-solid fa-magnifying-glass-location"></i></div>
+    <h5 class="font-semibold text-slate-900">Find Pharmacy</h5>
+</a><a href="pharmacists.html" class="rounded-3xl border border-slate-100 bg-white p-5 text-center shadow-soft transition hover:-translate-y-1 hover:bg-primary-50">
+    <div class="mx-auto mb-3 grid h-12 w-12 place-items-center rounded-2xl bg-primary-100 text-primary-600"><i class="fa-solid fa-user-doctor"></i></div>
+    <h5 class="font-semibold text-slate-900">Find Pharmacist</h5>
+</a><a href="messages.html" class="rounded-3xl border border-slate-100 bg-white p-5 text-center shadow-soft transition hover:-translate-y-1 hover:bg-primary-50">
+    <div class="mx-auto mb-3 grid h-12 w-12 place-items-center rounded-2xl bg-primary-100 text-primary-600"><i class="fa-solid fa-comments"></i></div>
+    <h5 class="font-semibold text-slate-900">Messages</h5>
+</a><a href="student-hub.html" class="rounded-3xl border border-slate-100 bg-white p-5 text-center shadow-soft transition hover:-translate-y-1 hover:bg-primary-50">
+    <div class="mx-auto mb-3 grid h-12 w-12 place-items-center rounded-2xl bg-primary-100 text-primary-600"><i class="fa-solid fa-graduation-cap"></i></div>
+    <h5 class="font-semibold text-slate-900">Student Hub</h5>
+</a></div>
+    <div class="rounded-3xl border border-slate-100 bg-white p-6 shadow-soft ">
+      <div class="flex items-center justify-between">
+        <h3 class="text-lg font-bold text-slate-900">Recent Messages</h3>
+        <a href="messages.html" class="text-sm font-semibold text-primary-600">View All</a>
+      </div>
+      <div class="mt-5 divide-y divide-slate-100">
+        <div class="flex items-center gap-4 py-4"><img src="assets/images/tomi.jpeg" class="h-12 w-12 rounded-full object-cover" alt="Pharmacist"><div><p class="font-semibold">Dr. Jane Okafor</p><p class="text-sm text-slate-500">Please continue your medication as prescribed.</p></div></div>
+        <div class="flex items-center gap-4 py-4"><img src="assets/images/ryan1.jpeg" class="h-12 w-12 rounded-full object-cover" alt="Pharmacist"><div><p class="font-semibold">LifeCare Pharmacy</p><p class="text-sm text-slate-500">Your prescription is now available for pickup.</p></div></div>
+      </div>
+    </div>
+  </div>
+  <div class="space-y-6">
+    <div class="rounded-3xl border border-slate-100 bg-white p-6 shadow-soft ">
+      <h3 class="text-lg font-bold text-slate-900">Preferred Pharmacy</h3>
+      <img src="assets/images/img 1.png" class="mt-4 h-40 w-full rounded-2xl object-cover" alt="LifeCare Pharmacy">
+      <h4 class="mt-4 font-bold text-slate-900">LifeCare Pharmacy</h4>
+      <p class="text-sm text-slate-500">12 Allen Avenue, Ikeja, Lagos</p>
+      <a href="pharmacy-details.html" class="mt-5 inline-flex rounded-2xl bg-primary-600 px-5 py-3 text-sm font-bold text-white hover:bg-primary-700">View Pharmacy</a>
+    </div>
+    <div class="rounded-3xl border border-slate-100 bg-white p-6 shadow-soft ">
+      <h3 class="text-lg font-bold text-slate-900">Upcoming Refill</h3>
+      <div class="mt-4 rounded-2xl bg-amber-50 p-4 text-amber-900"><p class="font-bold">Insulin</p><p class="text-sm">Refill Date: 15 July 2026</p></div>
+      <a href="reminders.html" class="mt-5 inline-flex rounded-2xl border border-primary-200 px-5 py-3 text-sm font-bold text-primary-700 hover:bg-primary-50">Schedule Reminder</a>
+    </div>
+    <div class="rounded-3xl border border-slate-100 bg-white p-6 shadow-soft ">
+      <h3 class="text-lg font-bold text-slate-900">Daily Health Tip</h3>
+      <p class="mt-3 text-sm leading-6 text-slate-600">Stay hydrated by drinking at least 2 litres of water daily and always take medications exactly as prescribed by your healthcare professional.</p>
+    </div>
+  </div>
+</section>
+</main>
+    </div>
+  </div>
+</body>
+</html>

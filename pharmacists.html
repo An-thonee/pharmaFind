@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Find Pharmacists | PharmaFind</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Poppins', 'ui-sans-serif', 'system-ui'] },
+          colors: {
+            primary: {50:'#ecfdf5',100:'#d1fae5',200:'#a7f3d0',300:'#6ee7b7',400:'#34d399',500:'#16a34a',600:'#15803d',700:'#166534',800:'#14532d',900:'#052e16'},
+            tealbrand: '#0f766e'
+          },
+          boxShadow: { soft: '0 20px 45px rgba(15, 118, 110, 0.10)' }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-50 font-sans text-slate-800">
+
+  <header class="sticky top-0 z-40 border-b border-slate-100 bg-white/90 backdrop-blur">
+    <div class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
+      <a href="index.html" class="flex items-center gap-3 text-xl font-extrabold text-primary-600">
+        <span class="grid h-10 w-10 place-items-center rounded-2xl bg-primary-100 text-primary-600"><i class="fa-solid fa-location-crosshairs"></i></span>
+        PharmaFind
+      </a>
+      <nav class="flex flex-wrap items-center gap-1"><a class="px-3 py-2 rounded-full text-sm font-medium text-slate-600 hover:bg-slate-100 hover:text-primary-700" href="index.html">Home</a><a class="px-3 py-2 rounded-full text-sm font-medium text-slate-600 hover:bg-slate-100 hover:text-primary-700" href="dashboard.html">Dashboard</a><a class="px-3 py-2 rounded-full text-sm font-medium text-slate-600 hover:bg-slate-100 hover:text-primary-700" href="pharmacies.html">Find Pharmacy</a><a class="px-3 py-2 rounded-full text-sm font-medium bg-primary-100 text-primary-700" href="pharmacists.html">Pharmacists</a><a class="px-3 py-2 rounded-full text-sm font-medium text-slate-600 hover:bg-slate-100 hover:text-primary-700" href="student-hub.html">Student Hub</a><a class="px-3 py-2 rounded-full text-sm font-medium text-slate-600 hover:bg-slate-100 hover:text-primary-700" href="reminders.html">Reminders</a><a class="px-3 py-2 rounded-full text-sm font-medium text-slate-600 hover:bg-slate-100 hover:text-primary-700" href="login.html">Login</a></nav>
+    </div>
+  </header>
+<main class="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
+  <section class="rounded-[2rem] bg-white p-8 text-center shadow-soft md:p-12">
+    <p class="text-sm font-semibold uppercase tracking-[0.25em] text-primary-600">Professional support</p>
+    <h1 class="mt-3 text-4xl font-extrabold text-slate-900 md:text-5xl">Find a Licensed Pharmacist</h1>
+    <p class="mx-auto mt-4 max-w-2xl text-slate-500">Search experienced pharmacists by specialty or location.</p>
+    <form class="mx-auto mt-8 grid max-w-4xl gap-4 md:grid-cols-[1fr_220px_180px_auto]"><input placeholder="Search Pharmacist" class="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none transition placeholder:text-slate-400 focus:border-primary-500 focus:ring-4 focus:ring-primary-100 "><select class="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none transition placeholder:text-slate-400 focus:border-primary-500 focus:ring-4 focus:ring-primary-100 "><option>Specialization</option><option>Clinical Pharmacy</option><option>Community Pharmacy</option><option>Hospital Pharmacy</option><option>Industrial Pharmacy</option></select><select class="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none transition placeholder:text-slate-400 focus:border-primary-500 focus:ring-4 focus:ring-primary-100 "><option>State</option><option>Lagos</option><option>Abuja</option><option>Enugu</option></select><button type="button" class="rounded-2xl bg-primary-600 px-7 py-3 font-bold text-white hover:bg-primary-700">Search</button></form>
+  </section>
+  <section class="mt-10 grid gap-6 md:grid-cols-3"><article class="overflow-hidden rounded-3xl border border-slate-100 bg-white shadow-soft transition hover:-translate-y-2 hover:shadow-xl">
+  <img src="assets/images/tomi.jpeg" class="h-80 w-full object-cover object-center" alt="Dr. Tomisin Subair">
+  <div class="p-6">
+    <div class="mb-3 flex items-center justify-between gap-3"><h3 class="text-xl font-bold text-slate-900">Dr. Tomisin Subair</h3><span class="rounded-full bg-primary-600 text-white px-3 py-1 text-xs font-bold">Online</span></div>
+    <p class="text-sm text-slate-500">Clinical Pharmacist</p><p class="mt-1 text-sm text-slate-500">8 Years Experience</p>
+    <div class="mt-5 flex gap-3"><a href="#" class="flex-1 rounded-2xl border border-primary-200 px-4 py-2 text-center text-sm font-bold text-primary-700 hover:bg-primary-50">View Profile</a><a href="messages.html" class="flex-1 rounded-2xl bg-primary-600 px-4 py-2 text-center text-sm font-bold text-white hover:bg-primary-700">Message</a></div>
+  </div>
+</article><article class="overflow-hidden rounded-3xl border border-slate-100 bg-white shadow-soft transition hover:-translate-y-2 hover:shadow-xl">
+  <img src="assets/images/ryan1.jpeg" class="h-80 w-full object-cover object-center" alt="Dr. Musa Bello">
+  <div class="p-6">
+    <div class="mb-3 flex items-center justify-between gap-3"><h3 class="text-xl font-bold text-slate-900">Dr. Musa Bello</h3><span class="rounded-full bg-slate-200 text-slate-600 px-3 py-1 text-xs font-bold">Offline</span></div>
+    <p class="text-sm text-slate-500">Community Pharmacist</p><p class="mt-1 text-sm text-slate-500">12 Years Experience</p>
+    <div class="mt-5 flex gap-3"><a href="#" class="flex-1 rounded-2xl border border-primary-200 px-4 py-2 text-center text-sm font-bold text-primary-700 hover:bg-primary-50">View Profile</a><a href="messages.html" class="flex-1 rounded-2xl bg-primary-600 px-4 py-2 text-center text-sm font-bold text-white hover:bg-primary-700">Call</a></div>
+  </div>
+</article><article class="overflow-hidden rounded-3xl border border-slate-100 bg-white shadow-soft transition hover:-translate-y-2 hover:shadow-xl">
+  <img src="assets/images/ryan2.jpeg" class="h-80 w-full object-cover object-center" alt="Dr. Ryan Joe">
+  <div class="p-6">
+    <div class="mb-3 flex items-center justify-between gap-3"><h3 class="text-xl font-bold text-slate-900">Dr. Ryan Joe</h3><span class="rounded-full bg-primary-600 text-white px-3 py-1 text-xs font-bold">Online</span></div>
+    <p class="text-sm text-slate-500">Industrial Pharmacist</p><p class="mt-1 text-sm text-slate-500">Student Mentor</p>
+    <div class="mt-5 flex gap-3"><a href="#" class="flex-1 rounded-2xl border border-primary-200 px-4 py-2 text-center text-sm font-bold text-primary-700 hover:bg-primary-50">View Profile</a><a href="messages.html" class="flex-1 rounded-2xl bg-primary-600 px-4 py-2 text-center text-sm font-bold text-white hover:bg-primary-700">Connect</a></div>
+  </div>
+</article></section>
+  <section class="mt-12 overflow-hidden rounded-[2rem] bg-gradient-to-r from-primary-600 to-tealbrand p-8 text-white shadow-soft md:flex md:items-center md:justify-between md:p-12">
+    <div><h2 class="text-3xl font-extrabold">Need Professional Medication Advice?</h2><p class="mt-3 text-white/80">Talk directly to licensed pharmacists anytime.</p></div>
+    <a href="messages.html" class="mt-6 inline-flex rounded-2xl bg-white px-6 py-3 font-bold text-primary-700 hover:bg-primary-50 md:mt-0">Find a Pharmacist</a>
+  </section>
+</main>
+<footer class="py-8 text-center text-sm text-slate-500">© PharmaFind 2026</footer>
+</body>
+</html>

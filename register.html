@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create Account | PharmaFind</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Poppins', 'ui-sans-serif', 'system-ui'] },
+          colors: {
+            primary: {50:'#ecfdf5',100:'#d1fae5',200:'#a7f3d0',300:'#6ee7b7',400:'#34d399',500:'#16a34a',600:'#15803d',700:'#166534',800:'#14532d',900:'#052e16'},
+            tealbrand: '#0f766e'
+          },
+          boxShadow: { soft: '0 20px 45px rgba(15, 118, 110, 0.10)' }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-50 font-sans text-slate-800">
+  <main class="grid min-h-screen lg:grid-cols-2">
+    <section class="flex flex-col justify-center bg-white px-6 py-12 sm:px-12 lg:px-20">
+      <a href="index.html" class="mb-10 flex items-center gap-3 text-2xl font-extrabold text-primary-600"><span class="grid h-12 w-12 place-items-center rounded-2xl bg-primary-100"><i class="fa-solid fa-location-crosshairs"></i></span>PharmaFind</a>
+      <div class="max-w-xl">
+        <h1 class="text-3xl font-extrabold text-slate-900 md:text-4xl">Create Your Account</h1>
+        <p class="mt-3 text-slate-500">Join PharmaFind and connect with licensed pharmacies, professional pharmacists, and medication support.</p>
+        <form class="mt-8 space-y-4">
+          <div class="grid gap-4 sm:grid-cols-2"><input type="text" placeholder="First Name" class="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none transition placeholder:text-slate-400 focus:border-primary-500 focus:ring-4 focus:ring-primary-100 " required><input type="text" placeholder="Last Name" class="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none transition placeholder:text-slate-400 focus:border-primary-500 focus:ring-4 focus:ring-primary-100 " required></div>
+          <input type="email" placeholder="Email Address" class="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none transition placeholder:text-slate-400 focus:border-primary-500 focus:ring-4 focus:ring-primary-100 " required>
+          <input type="tel" placeholder="Phone Number" class="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none transition placeholder:text-slate-400 focus:border-primary-500 focus:ring-4 focus:ring-primary-100 " required>
+          <select class="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none transition placeholder:text-slate-400 focus:border-primary-500 focus:ring-4 focus:ring-primary-100 " required><option>Select Account Type</option><option>Patient</option><option>Certified Pharmacy</option><option>Pharmacist</option><option>Student Pharmacist</option></select>
+          <input type="text" placeholder="Pharmacy License / Code Number (if applicable)" class="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none transition placeholder:text-slate-400 focus:border-primary-500 focus:ring-4 focus:ring-primary-100 ">
+          <div class="grid gap-4 sm:grid-cols-2"><input type="password" placeholder="Create Password" class="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none transition placeholder:text-slate-400 focus:border-primary-500 focus:ring-4 focus:ring-primary-100 " required><input type="password" placeholder="Confirm Password" class="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none transition placeholder:text-slate-400 focus:border-primary-500 focus:ring-4 focus:ring-primary-100 " required></div>
+          <label class="flex items-start gap-3 text-sm text-slate-600"><input type="checkbox" class="mt-1 h-4 w-4 rounded border-slate-300 text-primary-600" required><span>I agree to the <a href="#" class="font-semibold text-primary-600">Terms</a> & <a href="#" class="font-semibold text-primary-600">Privacy Policy</a></span></label>
+          <a href="dashboard.html" class="block rounded-2xl bg-primary-600 px-5 py-3 text-center font-bold text-white hover:bg-primary-700">Create Account</a>
+        </form>
+        <p class="mt-6 text-sm text-slate-500">Already have an account? <a href="login.html" class="font-bold text-primary-600">Login</a></p>
+        </div>
+    </section>
+    <section class="relative hidden overflow-hidden bg-gradient-to-br from-primary-600 to-tealbrand p-12 text-white lg:flex lg:items-center">
+      <div class="absolute -right-24 -top-24 h-72 w-72 rounded-full bg-white/10"></div>
+      <div class="absolute -bottom-32 -left-20 h-96 w-96 rounded-full bg-white/10"></div>
+      <div class="relative mx-auto max-w-lg">
+        <div class="mb-8 grid h-24 w-24 place-items-center rounded-[2rem] bg-white/15 text-5xl"><i class="fa-solid fa-heart-pulse"></i></div>
+        <h2 class="text-5xl font-extrabold leading-tight">Healthcare Made Simple</h2>
+        <p class="mt-6 text-lg leading-8 text-white/80">Find nearby pharmacies, receive reminders, consult pharmacists, track prescriptions, and manage your health from one secure platform.</p>
+        <div class="mt-10 grid gap-4 sm:grid-cols-3">
+          <div class="rounded-3xl bg-white/10 p-5"><p class="text-3xl font-extrabold">25+</p><p class="text-sm text-white/70">Pharmacies</p></div>
+          <div class="rounded-3xl bg-white/10 p-5"><p class="text-3xl font-extrabold">12+</p><p class="text-sm text-white/70">Pharmacists</p></div>
+          <div class="rounded-3xl bg-white/10 p-5"><p class="text-3xl font-extrabold">24/7</p><p class="text-sm text-white/70">Support</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

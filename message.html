@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Messages | PharmaFind</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Poppins', 'ui-sans-serif', 'system-ui'] },
+          colors: {
+            primary: {50:'#ecfdf5',100:'#d1fae5',200:'#a7f3d0',300:'#6ee7b7',400:'#34d399',500:'#16a34a',600:'#15803d',700:'#166534',800:'#14532d',900:'#052e16'},
+            tealbrand: '#0f766e'
+          },
+          boxShadow: { soft: '0 20px 45px rgba(15, 118, 110, 0.10)' }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-50 font-sans text-slate-800">
+<div class="flex h-screen overflow-hidden">
+  <aside class="hidden w-96 border-r border-slate-100 bg-white p-5 md:block"><div class="mb-5 flex items-center justify-between"><h1 class="text-2xl font-extrabold text-slate-900">Messages</h1><a href="dashboard.html" class="rounded-2xl bg-slate-100 px-4 py-2 text-sm font-bold text-slate-600">Dashboard</a></div><input type="text" placeholder="Search conversation" class="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none transition placeholder:text-slate-400 focus:border-primary-500 focus:ring-4 focus:ring-primary-100 "><div class="mt-5 space-y-2"><a href="#" class="flex items-center gap-4 rounded-3xl p-4 transition hover:bg-slate-50 bg-primary-50"><img src="assets/images/tomi.jpeg" class="h-14 w-14 rounded-full object-cover" alt="Dr. Jane Okafor"><div class="min-w-0"><h4 class="truncate font-bold text-slate-900">Dr. Jane Okafor</h4><p class="truncate text-sm text-slate-500">Please continue your medication.</p></div></a><a href="#" class="flex items-center gap-4 rounded-3xl p-4 transition hover:bg-slate-50 "><img src="assets/images/img 1.png" class="h-14 w-14 rounded-full object-cover" alt="LifeCare Pharmacy"><div class="min-w-0"><h4 class="truncate font-bold text-slate-900">LifeCare Pharmacy</h4><p class="truncate text-sm text-slate-500">Prescription is ready for pickup.</p></div></a><a href="#" class="flex items-center gap-4 rounded-3xl p-4 transition hover:bg-slate-50 "><img src="assets/images/ryan1.jpeg" class="h-14 w-14 rounded-full object-cover" alt="Dr. Musa Bello"><div class="min-w-0"><h4 class="truncate font-bold text-slate-900">Dr. Musa Bello</h4><p class="truncate text-sm text-slate-500">Your dosage schedule looks good.</p></div></a><a href="#" class="flex items-center gap-4 rounded-3xl p-4 transition hover:bg-slate-50 "><img src="assets/images/img 11.jpg" class="h-14 w-14 rounded-full object-cover" alt="CarePoint Pharmacy"><div class="min-w-0"><h4 class="truncate font-bold text-slate-900">CarePoint Pharmacy</h4><p class="truncate text-sm text-slate-500">We are open until 8 PM today.</p></div></a></div></aside>
+  <main class="flex flex-1 flex-col">
+    <header class="flex items-center justify-between border-b border-slate-100 bg-white p-5"><div class="flex items-center gap-4"><img src="assets/images/tomi.jpeg" class="h-14 w-14 rounded-full object-cover" alt="Dr. Jane Okafor"><div><h2 class="font-bold text-slate-900">Dr. Jane Okafor</h2><a href="#" class="text-sm font-semibold text-primary-600">View Profile</a></div></div><a href="dashboard.html" class="rounded-2xl bg-primary-600 px-4 py-2 text-sm font-bold text-white md:hidden">Back</a></header>
+    <section class="flex-1 space-y-4 overflow-y-auto p-5"><div class="max-w-lg rounded-3xl bg-white p-4 shadow-soft"><p class="text-sm leading-6 text-slate-600">Hello Onyeka, please continue your medication after meals and drink enough water.</p></div><div class="ml-auto max-w-lg rounded-3xl bg-primary-600 p-4 text-white shadow-soft"><p class="text-sm leading-6">Thank you doctor. I will follow the instructions.</p></div><div class="max-w-lg rounded-3xl bg-white p-4 shadow-soft"><p class="text-sm leading-6 text-slate-600">Great. Send me a message if you notice any side effects.</p></div></section>
+    <form class="border-t border-slate-100 bg-white p-5"><div class="flex gap-3"><input type="text" placeholder="Type your message..." class="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none transition placeholder:text-slate-400 focus:border-primary-500 focus:ring-4 focus:ring-primary-100 "><button type="button" class="rounded-2xl bg-primary-600 px-6 font-bold text-white hover:bg-primary-700"><i class="fa-solid fa-paper-plane"></i></button></div></form>
+  </main>
+</div>
+</body>
+</html>
